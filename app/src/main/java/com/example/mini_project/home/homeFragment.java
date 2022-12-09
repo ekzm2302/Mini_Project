@@ -25,10 +25,10 @@ public class homeFragment extends Fragment {
         View v = inflater.inflate(R.layout.fragment_home, container, false);
 
         ArrayList<HomeDTO> list = new ArrayList<>();
+            list.add(new HomeDTO(R.drawable.car4, "컴퓨터 본체 팔아유", "서구 화정동 끌올: 4분 30초", "250,000원", "12" , "6" ));
             list.add(new HomeDTO(R.drawable.car1, "킥보드를 판매합니다", "서구 금호동 끌올: 30초", "100,000원", "1" , "5" ));
             list.add(new HomeDTO(R.drawable.car2, "의자 판매합니다", "서구 쌍촌동 끌올: 1분 30초", "50,000원",  "3"  , "4" ));
             list.add(new HomeDTO(R.drawable.car3, "집 팝니다", "담양 어딘가 끌올:2분 30초", "100,000,000원", "13" , "2" ));
-            list.add(new HomeDTO(R.drawable.car4, "컴퓨터 본체 팔아유", "서구 화정동 끌올: 4분 30초", "250,000원", "12" , "6" ));
             list.add(new HomeDTO(R.drawable.car6, "슬림 에어컨 1명선착순 나눔해요", "북구 양산동 끌올:5분 30초", "나눔", "2" , "8" ));
             list.add(new HomeDTO(R.drawable.car7, "LG 모니터 잘나오는거 팔아요", "남구 주월동 끌올:7분 50초", "50,000원", "21" , "21" ));
             list.add(new HomeDTO(R.drawable.car5, "삼성 에어컨 한대 판매합니다", "동구 충장로 끌올: 9분", "500,000원", "5" , "11" ));

@@ -4,23 +4,26 @@
     android:layout_height="wrap_content"
     android:orientation="vertical"
     android:id="@+id/item_recv"
-    android:layout_marginBottom="5dp">
+    android:layout_marginBottom="3dp">
 
     <LinearLayout
         android:orientation="horizontal"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="match_parent">
 
     <ImageView
+        android:layout_marginTop="8dp"
+        android:layout_gravity="center"
         android:id="@+id/car"
         android:src="@drawable/car2"
-        android:layout_width="80dp"
-        android:layout_height="80dp"/>
+        android:scaleType="fitXY"
+        android:layout_width="140dp"
+        android:layout_height="140dp"/>
 
         <LinearLayout
             android:orientation="vertical"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
         <TextView
             android:textSize="18dp"
             android:id="@+id/tv_sale"
@@ -49,46 +52,49 @@
                 android:text="100,000원"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
+
+            <RelativeLayout
+                android:layout_marginTop="45dp"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/chat"
+                    android:src="@drawable/chat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/tv_num1"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/chat"
+                    android:text="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <ImageView
+                    android:layout_marginTop="1dp"
+                    android:id="@+id/her"
+                    android:layout_toRightOf="@id/chat"
+                    android:layout_marginLeft="25dp"
+                    android:src="@drawable/her"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/tv_num2"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/her"
+                    android:text="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
         </LinearLayout>
 
     </LinearLayout>
-    <RelativeLayout
-        android:layout_marginRight="20dp"
-        android:layout_gravity="right"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-
-        <ImageView
-            android:id="@+id/chat"
-            android:src="@drawable/chat"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-        <TextView
-            android:id="@+id/tv_num1"
-            android:layout_marginLeft="5dp"
-            android:layout_toRightOf="@id/chat"
-            android:text="1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-
-        <ImageView
-            android:layout_marginTop="1dp"
-            android:id="@+id/her"
-            android:layout_toRightOf="@id/chat"
-           android:layout_marginLeft="25dp"
-            android:src="@drawable/her"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-        <TextView
-            android:id="@+id/tv_num2"
-            android:layout_marginLeft="5dp"
-            android:layout_toRightOf="@id/her"
-            android:text="1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-    </RelativeLayout>
 
     <View
+        android:layout_marginTop="10dp"
         android:background="#C5C1C1"
         android:layout_width="match_parent"
         android:layout_height="1dp"/>

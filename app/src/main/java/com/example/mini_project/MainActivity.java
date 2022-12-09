@@ -9,10 +9,12 @@ import android.os.Bundle;
 import android.view.MenuItem;
 
 import com.example.mini_project.home.homeFragment;
+import com.example.mini_project.life.LifeFragment;
+import com.example.mini_project.mycarrot.MycarrotFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainActivity extends AppCompatActivity {
-    ActionBar actionBar;
+
     BottomNavigationView btm_nav;
 
     @Override
@@ -32,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
 
                 changeFragment(new homeFragment());
                 } else if ( item.getItemId() == R.id.btm_item2 )       {
-
+                changeFragment(new LifeFragment());
 
                 } else if (item.getItemId() == R.id.btm_item3 )       {
 
@@ -40,7 +42,8 @@ public class MainActivity extends AppCompatActivity {
                 } else if (item.getItemId() == R.id.btm_item4 )       {
 
                     
-                } else if (item.getItemId() == R.id.btm_item5 )       {
+                } else if (item.getItemId() == R.id.btm_item5 )
+                 changeFragment(new MycarrotFragment());{
                 }
                 return true;
             }
