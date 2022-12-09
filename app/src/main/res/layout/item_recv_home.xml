@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/item_recv"
+    android:layout_marginBottom="5dp">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/car"
+        android:src="@drawable/car2"
+        android:layout_width="80dp"
+        android:layout_height="80dp"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <TextView
+            android:textSize="18dp"
+            android:id="@+id/tv_sale"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:text="킥보드 판매합니다. "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tv_area"
+                android:textSize="13dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="10dp"
+                android:text="서구 치평동:   끌올 50초 전"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tv_price"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="10dp"
+                android:text="100,000원"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_marginRight="20dp"
+        android:layout_gravity="right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/chat"
+            android:src="@drawable/chat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/tv_num1"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/chat"
+            android:text="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:layout_marginTop="1dp"
+            android:id="@+id/her"
+            android:layout_toRightOf="@id/chat"
+           android:layout_marginLeft="25dp"
+            android:src="@drawable/her"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/tv_num2"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/her"
+            android:text="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+    <View
+        android:background="#C5C1C1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+</LinearLayout>
