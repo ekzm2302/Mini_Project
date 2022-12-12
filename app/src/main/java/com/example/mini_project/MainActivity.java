@@ -1,13 +1,13 @@
 package com.example.mini_project;
 
 import androidx.annotation.NonNull;
-import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
 import android.os.Bundle;
 import android.view.MenuItem;
 
+import com.example.mini_project.chat.ChatFragment;
 import com.example.mini_project.home.homeFragment;
 import com.example.mini_project.life.LifeFragment;
 import com.example.mini_project.mycarrot.MycarrotFragment;
@@ -36,11 +36,11 @@ public class MainActivity extends AppCompatActivity {
                 } else if ( item.getItemId() == R.id.btm_item2 )       {
                 changeFragment(new LifeFragment());
 
-                } else if (item.getItemId() == R.id.btm_item3 )       {
+                } else if (item.getItemId() == R.id.btm_item3 )  {
 
 
                 } else if (item.getItemId() == R.id.btm_item4 )       {
-
+                    changeFragment(new ChatFragment());
                     
                 } else if (item.getItemId() == R.id.btm_item5 )
                  changeFragment(new MycarrotFragment());{
