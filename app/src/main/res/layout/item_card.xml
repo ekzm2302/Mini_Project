@@ -3,11 +3,11 @@
     android:layout_margin="5dp"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="60dp"
-    android:layout_height="25dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
     app:strokeColor="#DEDEDE"
     app:strokeWidth="1dp"
-    app:cardCornerRadius="20dp"
+    app:cardCornerRadius="15dp"
     >
 <LinearLayout
     android:layout_gravity="center"
@@ -15,15 +15,23 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content">
     <ImageView
+        android:padding="5dp"
         android:src="@drawable/ic_baseline_menu_24"
-        android:layout_width="20dp"
-        android:layout_height="20dp"/>
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
     <TextView
+        android:padding="5dp"
+        android:layout_marginRight="3dp"
+        android:textSize="15dp"
         android:id="@+id/tv_card_name"
         android:layout_gravity="center"
         android:text="주제"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
+
+
 </LinearLayout>
+
 
 </com.google.android.material.card.MaterialCardView>

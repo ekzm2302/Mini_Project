@@ -6,7 +6,6 @@
     tools:context=".home.homeFragment"
     android:orientation="vertical">
 
-
     <LinearLayout
         android:padding="15dp"
         android:orientation="horizontal"
@@ -22,6 +21,7 @@
             android:backgroundTint="@color/white"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
+
 
         <RelativeLayout
             android:gravity="right"
@@ -52,26 +52,25 @@
                 android:layout_marginRight="5dp"
                 android:src="@drawable/ic_search" />
         </RelativeLayout>
+
     </LinearLayout>
+
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/card"
+        android:id="@+id/recv_card"
         android:padding="10dp"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
+
     <View
         android:background="#C5C1C1"
         android:layout_width="match_parent"
         android:layout_height="1dp"/>
 
-
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recv_home"
+        android:id="@+id/recv_dong"
         android:padding="10dp"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"/>
-
-
+        android:layout_height="wrap_content"/>
 
 
 

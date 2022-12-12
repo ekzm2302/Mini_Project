@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_dong_title"
+            android:textSize="14dp"
+            android:background="#D8D6D6"
+            android:text="동네질문"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:layout_marginTop="6dp"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            <TextView
+                android:textColor="#F1805C"
+                android:text="Q."
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tv_dong_name"
+                    android:text="혹시 근처에 베지밀 인펀트 낱개로 파는곳 보신분 계실까요??"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/img_dong"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center"
+            android:src="@drawable/dong"
+            android:layout_width="300dp"
+            android:layout_height="300dp"/>
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_dong_nic"
+                android:textColor="#AEAAAA"
+                android:textSize="13dp"
+                android:text="나만의썬샤인"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:textColor="#FFAEAAAA"
+                android:layout_gravity="center"
+                android:textSize="5dp"
+                android:text="  ⊙"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tv_dong_dong"
+                    android:layout_weight="1"
+                    android:textColor="#AEAAAA"
+                    android:textSize="13dp"
+                    android:text=" 용두동"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/tv_dong_time"
+                    android:layout_gravity="right"
+                    android:textColor="#AEAAAA"
+                    android:textSize="13dp"
+                    android:text=" 6분 전"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </LinearLayout>
+        <View
+            android:background="#C5C1C1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+        <LinearLayout
+            android:layout_margin="5dp"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_marginTop="2dp"
+                android:layout_gravity="center"
+                android:src="@drawable/dong1_1"
+                android:layout_width="20dp"
+                android:layout_height="20dp"/>
+            <TextView
+                android:textSize="12dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="2.5dp"
+                android:text="공감하기"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:src="@drawable/dong1_2"
+                android:layout_width="20dp"
+                android:layout_height="20dp"/>
+            <TextView
+                android:textSize="12dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="2.5dp"
+                android:text="댓글쓰기"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+        <View
+            android:background="#D1CDCD"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"/>
+    </LinearLayout>
+</ScrollView>
