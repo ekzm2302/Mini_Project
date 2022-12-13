@@ -63,12 +63,18 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
             <TextView
+<<<<<<< HEAD
                 android:layout_marginRight="2dp"
                 android:layout_marginLeft="2dp"
+=======
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginTop="-4dp"
+                android:textSize="20dp"
+>>>>>>> 46a310ed45fb917d528f39100ff2b6e240d60e08
                 android:textColor="#FFAEAAAA"
                 android:layout_gravity="center"
-                android:textSize="5dp"
-                android:text="  ⊙"
+                android:text="·"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
 
