@@ -55,6 +55,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
         <TextView
+            android:textColor="#000"
             android:textSize="18dp"
             android:textStyle="bold"
             android:layout_marginTop="15dp"
@@ -95,6 +96,7 @@
             android:layout_width="60dp"
             android:layout_height="60dp"/>
     <TextView
+        android:textColor="#000"
         android:layout_marginTop="3dp"
         android:layout_marginLeft="10dp"
         android:textSize="12dp"
@@ -115,6 +117,7 @@
             android:layout_width="60dp"
             android:layout_height="60dp"/>
             <TextView
+                android:textColor="#000"
                 android:layout_marginTop="3dp"
                 android:layout_gravity="center"
                 android:textSize="12dp"
@@ -133,6 +136,7 @@
             android:layout_width="60dp"
             android:layout_height="60dp"/>
             <TextView
+                android:textColor="#000"
                 android:layout_marginTop="3dp"
                 android:layout_marginLeft="10dp"
                 android:textSize="12dp"
@@ -147,6 +151,7 @@
         android:layout_width="match_parent"
         android:layout_height="5dp"/>
     <TextView
+        android:textColor="#000"
         android:layout_margin="15dp"
         android:textStyle="bold"
         android:textSize="18dp"
@@ -165,6 +170,7 @@
             android:layout_width="30dp"
             android:layout_height="30dp"/>
         <TextView
+            android:textColor="#000"
             android:textSize="16dp"
             android:layout_marginLeft="8dp"
             android:layout_marginTop="5dp"
@@ -185,6 +191,7 @@
             android:layout_width="30dp"
             android:layout_height="30dp"/>
         <TextView
+            android:textColor="#000"
             android:textSize="16dp"
             android:layout_marginLeft="8dp"
             android:layout_marginTop="5dp"
@@ -204,6 +211,7 @@
             android:layout_width="30dp"
             android:layout_height="30dp"/>
         <TextView
+            android:textColor="#000"
             android:textSize="16dp"
             android:layout_marginLeft="8dp"
             android:layout_marginTop="5dp"
@@ -223,6 +231,7 @@
             android:layout_width="30dp"
             android:layout_height="30dp"/>
         <TextView
+            android:textColor="#000"
             android:textSize="16dp"
             android:layout_marginLeft="8dp"
             android:layout_marginTop="5dp"
@@ -242,6 +251,7 @@
             android:layout_width="30dp"
             android:layout_height="30dp"/>
         <TextView
+            android:textColor="#000"
             android:textSize="16dp"
             android:layout_marginLeft="8dp"
             android:layout_marginTop="5dp"
@@ -255,6 +265,7 @@
         android:layout_width="match_parent"
         android:layout_height="5dp"/>
         <TextView
+            android:textColor="#000"
             android:layout_margin="15dp"
             android:textStyle="bold"
             android:textSize="18dp"
@@ -273,6 +284,7 @@
                 android:layout_width="30dp"
                 android:layout_height="30dp"/>
             <TextView
+                android:textColor="#000"
                 android:textSize="16dp"
                 android:layout_marginLeft="8dp"
                 android:layout_marginTop="5dp"
@@ -293,6 +305,7 @@
                 android:layout_width="30dp"
                 android:layout_height="30dp"/>
             <TextView
+                android:textColor="#000"
                 android:textSize="16dp"
                 android:layout_marginLeft="8dp"
                 android:layout_marginTop="5dp"
@@ -312,6 +325,7 @@
                 android:layout_width="30dp"
                 android:layout_height="30dp"/>
             <TextView
+                android:textColor="#000"
                 android:textSize="16dp"
                 android:layout_marginLeft="8dp"
                 android:layout_marginTop="5dp"
@@ -331,6 +345,7 @@
                 android:layout_width="30dp"
                 android:layout_height="30dp"/>
             <TextView
+                android:textColor="#000"
                 android:textSize="16dp"
                 android:layout_marginLeft="8dp"
                 android:layout_marginTop="5dp"
@@ -350,6 +365,7 @@
                 android:layout_width="30dp"
                 android:layout_height="30dp"/>
             <TextView
+                android:textColor="#000"
                 android:textSize="16dp"
                 android:layout_marginLeft="8dp"
                 android:layout_marginTop="5dp"
@@ -369,6 +385,7 @@
                 android:layout_width="30dp"
                 android:layout_height="30dp"/>
             <TextView
+                android:textColor="#000"
                 android:textSize="16dp"
                 android:layout_marginLeft="8dp"
                 android:layout_marginTop="5dp"
@@ -383,6 +400,7 @@
             android:layout_height="5dp"/>
 
         <TextView
+            android:textColor="#000"
             android:layout_margin="15dp"
             android:textStyle="bold"
             android:textSize="18dp"
@@ -401,6 +419,7 @@
                 android:layout_width="30dp"
                 android:layout_height="30dp"/>
             <TextView
+                android:textColor="#000"
                 android:textSize="16dp"
                 android:layout_marginLeft="8dp"
                 android:layout_marginTop="5dp"
@@ -421,6 +440,7 @@
                 android:layout_width="30dp"
                 android:layout_height="30dp"/>
             <TextView
+                android:textColor="#000"
                 android:textSize="16dp"
                 android:layout_marginLeft="8dp"
                 android:layout_marginTop="5dp"
@@ -436,6 +456,7 @@
             android:layout_height="5dp"/>
 
         <TextView
+            android:textColor="#000"
             android:layout_margin="15dp"
             android:textStyle="bold"
             android:textSize="18dp"
@@ -454,6 +475,7 @@
                 android:layout_width="30dp"
                 android:layout_height="30dp"/>
             <TextView
+                android:textColor="#000"
                 android:textSize="16dp"
                 android:layout_marginLeft="8dp"
                 android:layout_marginTop="5dp"
@@ -474,6 +496,7 @@
                 android:layout_width="30dp"
                 android:layout_height="30dp"/>
             <TextView
+                android:textColor="#000"
                 android:textSize="16dp"
                 android:layout_marginLeft="8dp"
                 android:layout_marginTop="5dp"

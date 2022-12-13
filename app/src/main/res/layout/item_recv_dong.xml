@@ -15,6 +15,7 @@
             android:layout_height="wrap_content">
 
         <TextView
+            android:textColor="#000"
             android:id="@+id/tv_dong_title"
             android:textSize="14dp"
             android:background="#D8D6D6"
@@ -23,7 +24,7 @@
             android:layout_height="wrap_content"/>
 
             <LinearLayout
-                android:layout_marginTop="6dp"
+                android:layout_marginTop="10dp"
                 android:orientation="horizontal"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
@@ -34,6 +35,8 @@
                 android:layout_height="wrap_content"/>
 
                 <TextView
+                    android:textSize="16dp"
+                    android:textColor="#000"
                     android:id="@+id/tv_dong_name"
                     android:text="혹시 근처에 베지밀 인펀트 낱개로 파는곳 보신분 계실까요??"
                     android:layout_width="wrap_content"
@@ -63,15 +66,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
             <TextView
-<<<<<<< HEAD
-                android:layout_marginRight="2dp"
-                android:layout_marginLeft="2dp"
-=======
-                android:layout_marginLeft="3dp"
-                android:layout_marginRight="3dp"
                 android:layout_marginTop="-4dp"
                 android:textSize="20dp"
->>>>>>> 46a310ed45fb917d528f39100ff2b6e240d60e08
                 android:textColor="#FFAEAAAA"
                 android:layout_gravity="center"
                 android:text="·"

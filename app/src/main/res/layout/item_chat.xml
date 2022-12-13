@@ -13,51 +13,61 @@
         android:id="@+id/chat_img"
         android:layout_margin="10dp"
         android:src="@drawable/profile_img1"
-        android:layout_width="40dp"
-        android:layout_height="40dp"/>
+        android:layout_width="55dp"
+        android:layout_height="55dp"/>
 
         <LinearLayout
-        
+            android:layout_weight="1"
             android:orientation="vertical"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
-        <TextView
-            android:id="@+id/tv_chat_name"
-            android:textColor="#000"
-            android:layout_marginTop="12dp"
-            android:textStyle="bold"
-            android:text="당근당근"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            <LinearLayout
 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:textSize="17dp"
+                    android:id="@+id/tv_chat_name"
+                    android:textColor="#000"
+                    android:layout_marginTop="12dp"
+                    android:textStyle="bold"
+                    android:text="당근당근"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tv_chat_time"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="13dp"
+                    android:layout_marginTop="11dp"
+                    android:text="문흥동·10분 전 "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
             <TextView
-
+                android:textColor="#000"
                 android:id="@+id/tv_chat_msg"
-                android:layout_marginTop="3dp"
-                android:textSize="13dp"
+                android:layout_marginTop="4dp"
+                android:textSize="16dp"
                 android:text="내용입력"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
         </LinearLayout>
 
-        <TextView
-
-            android:id="@+id/tv_chat_time"
-            android:layout_marginLeft="3dp"
-            android:textSize="10dp"
-            android:layout_marginTop="15dp"
-            android:text="문흥동·10분 전 "
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
 
         <ImageView
-
             android:id="@+id/chat_img2"
             android:layout_marginRight="20dp"
-            android:layout_gravity="right"
+            android:layout_gravity="center"
             android:src="@drawable/car1"
-            android:layout_width="40dp"
-            android:layout_height="40dp"/>
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
        </LinearLayout>
+    <View
+        android:background="#D1CECE"
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"/>
 
 </LinearLayout>
