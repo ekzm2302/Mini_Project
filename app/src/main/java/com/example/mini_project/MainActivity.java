@@ -10,6 +10,7 @@ import android.view.MenuItem;
 import com.example.mini_project.chat.ChatFragment;
 import com.example.mini_project.home.homeFragment;
 import com.example.mini_project.life.LifeFragment;
+import com.example.mini_project.location.LocationFragment;
 import com.example.mini_project.mycarrot.MycarrotFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -37,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
                 changeFragment(new LifeFragment());
 
                 } else if (item.getItemId() == R.id.btm_item3 )  {
-
+                changeFragment(new LocationFragment());
 
                 } else if (item.getItemId() == R.id.btm_item4 )       {
                     changeFragment(new ChatFragment());
