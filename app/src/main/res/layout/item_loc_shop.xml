@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:background="@drawable/item_radius2"
+        android:layout_marginLeft="10dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+
+            android:id="@+id/img_shop"
+            android:layout_marginLeft="0dp"
+           android:layout_marginTop="10dp"
+            android:src="@drawable/shop1"
+            android:layout_width="380dp"
+            android:layout_height="130dp"/>
+
+        <TextView
+            android:id="@+id/tv_shop_title"
+            android:textSize="19dp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp"
+            android:text="24시 스터디카페 &amp; 프독"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/tv_shop_msg"
+            android:layout_marginTop="5dp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:text="24시 스터디카페&amp;프리미엄독서실 문흥동 광주독점입니다."
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"/>
+        <LinearLayout
+            android:layout_marginTop="-5dp"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_shop_km"
+                android:textStyle="bold"
+                android:textSize="12dp"
+                android:textColor="#FB9546"
+                android:text="5KM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:textSize="20dp"
+                android:text="·"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/tv_shop_hoo"
+                android:textSize="13dp"
+                android:text="후기"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:textSize="20dp"
+                android:text="·"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tv_shop_best"
+                android:textSize="13dp"
+                android:text="단골 26"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <!-- 리니어 백그라운드 -->
+        <LinearLayout
+            android:background="@drawable/item_radius"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_shop_nic"
+                android:textSize="16dp"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:text="작은삶"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/tv_shop_msg2"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:layout_marginLeft="3dp"
+                android:text="새로운 분위기 ~깔끔하고 좋은공기 적합한 공부불빛~ 티코노에 편의시설듬뿍"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</HorizontalScrollView>

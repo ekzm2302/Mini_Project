@@ -18,6 +18,7 @@ public class DongAdapter extends RecyclerView.Adapter<DongAdapter.ViewHolder>{
 
     LayoutInflater inflater;
     ArrayList<DongDTO> list2;
+
     public DongAdapter(LayoutInflater inflater, Context context, ArrayList<DongDTO> list2) {
         this.inflater = inflater;
         this.list2 = list2;

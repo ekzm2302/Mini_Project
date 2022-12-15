@@ -203,6 +203,93 @@
         android:background="#E8E4E4"
         android:layout_width="match_parent"
         android:layout_height="5dp"/>
+
+    <LinearLayout
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginTop="5dp"
+            android:textColor="#000"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:text="걸어서 갈 수 있는 우리동네 알바"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:textSize="15dp"
+            android:layout_marginTop="8dp"
+            android:text="짱구는못말려님 근처에서 할 수 있는 알바를 모았어요."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recv_job"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <View
+        android:layout_marginTop="7dp"
+        android:background="#E8E4E4"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"/>
+
+    <LinearLayout
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textColor="#000"
+            android:textSize="19dp"
+            android:textStyle="bold"
+            android:text="이웃들의 추천가게"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recv_shop"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <View
+        android:layout_marginTop="20dp"
+        android:background="#E8E4E4"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"/>
+
+    <LinearLayout
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textColor="#000"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:text="설치없이 바로 이용하는 당근미니"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recv_item2"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <View
+        android:layout_marginTop="20dp"
+        android:background="#E8E4E4"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"/>
+
+
+
     <LinearLayout
         android:padding="10dp"
         android:orientation="vertical"
@@ -243,89 +330,20 @@
             android:textColor="#000"
             android:textSize="19dp"
             android:textStyle="bold"
-            android:text="이런 상품은 어떠세요?"
+            android:text="나의 당근 이야기"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
-        <TextView
-            android:textSize="15dp"
-            android:layout_marginTop="8dp"
-            android:text="짱구는못말려님이 봤던 상품을 바탕으로 제안해요."
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+
     </LinearLayout>
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recv_item2"
+        android:id="@+id/recv_story"
         android:padding="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
-    <View
-        android:layout_marginTop="20dp"
-        android:background="#E8E4E4"
-        android:layout_width="match_parent"
-        android:layout_height="5dp"/>
 
-    <LinearLayout
-        android:padding="10dp"
-        android:orientation="vertical"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-        <TextView
-            android:textColor="#000"
-            android:textSize="19dp"
-            android:textStyle="bold"
-            android:text="이런 상품은 어떠세요?"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-        <TextView
-            android:textSize="15dp"
-            android:layout_marginTop="8dp"
-            android:text="짱구는못말려님이 봤던 상품을 바탕으로 제안해요."
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-    </LinearLayout>
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recv_item3"
-        android:padding="10dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
 
-    <View
-        android:layout_marginTop="20dp"
-        android:background="#E8E4E4"
-        android:layout_width="match_parent"
-        android:layout_height="5dp"/>
 
-    <LinearLayout
-        android:padding="10dp"
-        android:orientation="vertical"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-        <TextView
-            android:textColor="#000"
-            android:textSize="19dp"
-            android:textStyle="bold"
-            android:text="이런 상품은 어떠세요?"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-        <TextView
-            android:textSize="15dp"
-            android:layout_marginTop="8dp"
-            android:text="짱구는못말려님이 봤던 상품을 바탕으로 제안해요."
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-    </LinearLayout>
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recv_item4"
-        android:padding="10dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-
-    <View
-        android:layout_marginTop="20dp"
-        android:background="#E8E4E4"
-        android:layout_width="match_parent"
-        android:layout_height="5dp"/>
 
 
 
