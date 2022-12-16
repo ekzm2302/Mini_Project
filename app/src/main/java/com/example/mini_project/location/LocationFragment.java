@@ -14,6 +14,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.mini_project.R;
+import com.example.mini_project.cp.CpAdapter;
+import com.example.mini_project.cp.CpDTO;
 
 import java.util.ArrayList;
 
@@ -26,6 +28,7 @@ public class LocationFragment extends Fragment {
     ArrayList<JobDTO2> jobs2;
     ArrayList<JobDTO3> jobs3;
     ArrayList<ShopDTO> shop;
+    ArrayList<CpDTO> cplist;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -110,7 +113,19 @@ public class LocationFragment extends Fragment {
 
         // 우리동네 인기쿠폰
        recv_cp = v.findViewById(R.id.recv_cp);
+        cplist = new ArrayList<>();
+        cplist.add(new CpDTO(R.drawable.cp1, "피굽남피자6호점", "2.5km", "첫 방문 30%할인"
+                        , "레닌그라드", "가게가 깔끔하고 관리가 만족스러웠어요.."));
 
+        cplist.add(new CpDTO(R.drawable.cp1, "피굽남피자6호점", "2.5km", "첫 방문 30%할인"
+                , "레닌그라드", "가게가 깔끔하고 관리가 만족스러웠어요.."));
+
+        cplist.add(new CpDTO(R.drawable.cp1, "피굽남피자6호점", "2.5km", "첫 방문 30%할인"
+                , "레닌그라드", "가게가 깔끔하고 관리가 만족스러웠어요.."));
+
+        CpAdapter cpAdapter = new CpAdapter(inflater, cplist);
+        recv_cp.setAdapter(cpAdapter);
+        recv_cp.setLayoutManager(new LinearLayoutManager(getContext(), RecyclerView.HORIZONTAL, false));
 
         return v;
     }
