@@ -19,7 +19,7 @@ import java.util.ArrayList;
 
 
 public class LocationFragment extends Fragment {
-    RecyclerView recv_item, recv_story, recv_job, recv_shop;
+    RecyclerView recv_item, recv_story, recv_job, recv_shop, recv_cp;
     ArrayList<ItemDTO> list;
     ArrayList<StoryDTO> story;
     ArrayList<JobDTO> jobs;
@@ -84,18 +84,34 @@ public class LocationFragment extends Fragment {
         // 이웃들의 추천 가게
         recv_shop = v.findViewById(R.id.recv_shop);
         shop = new ArrayList<>();
-        shop.add(new ShopDTO(R.drawable.shop1, "24시 스터디카페&amp; 프독", "24시 스터디카페&프리미엄독서실 문흥동 광주", "5Km", "후기 4", "단골 26"
-                                                , "작은삶", "새로운 분위기 ~ 깔끔하고 좋은공기 적합한 공부불빛~ 티코너에 퍈의시설 듬뿍이"));
+        shop.add(new ShopDTO(R.drawable.shop1, "24시 스터디카페& 프독", "24시 스터디카페&프리미엄독서실 문흥동 광주", "3Km", "후기 4", "단골 26"
+                                                , "작은삶", "새로운 분위기 ~ 깔끔하고 좋은공기 적합한 공부불빛~ 티코너에 퍈의시설 듬뿍이 공부하시고 가세요"));
 
-        shop.add(new ShopDTO(R.drawable.shop1, "24시 스터디카페&amp; 프독", "24시 스터디카페&프리미엄독서실 문흥동 광주", "5Km", "후기 4", "단골 26"
-                , "작은삶", "새로운 분위기 ~ 깔끔하고 좋은공기 적합한 공부불빛~ 티코너에 퍈의시설 듬뿍이"));
+        shop.add(new ShopDTO(R.drawable.shop2, "블레드치킨", "100%오트밀(귀리)로 만든 후라이드 (국내최초)!", "4Km", "후기 3", "단골 9"
+                , "Renault", "발행해주신 쿠폰으로 정말 저렴하게 너무 맜있는 치킨을 먹었습니다. 확실히 드셔보셔도 후회안합니다"));
 
-        shop.add(new ShopDTO(R.drawable.shop1, "24시 스터디카페&amp; 프독", "24시 스터디카페&amp;프리미엄독서실 문흥동 광주", "5Km", "후기 4", "단골 26"
-                , "작은삶", "새로운 분위기 ~ 깔끔하고 좋은공기 적합한 공부불빛~ 티코너에 퍈의시설 듬뿍이"));
+        shop.add(new ShopDTO(R.drawable.shop3, "프리미엄 카살롱 출장세차", "저희 Car Salon은 마진율을 낮추고 고객님들의 ", "4.9Km", "후기 60", "단골 523"
+                , "안녕봄", "연락드리면 빠르고 치절하게 답변해주세요 외부주차장만 있는 단지라 비오는날도 눈오는날도 좋아요"));
+
+      shop.add(new ShopDTO(R.drawable.shop4, "광주 촘촘망 방충망", "텍스토머 촘촘망 공식 시공 가맹점 광주 촘촘망", "3.1Km", "후기 8", "단골 36"
+              , "오잉", "친절하시고 시간약속도 잘지키세요~ 가격도 착하구요~ 대만족입니다^^ 저희 아래층도 하기로했어요"));
+
+      shop.add(new ShopDTO(R.drawable.shop5, "네이처컬렉션 오치점", "LG화장품 토탈 편집샵 더페이스샵/이자녹스 등등", "3.4Km", "후기 27", "단골 168"
+              , "깎아달라하면차단합니다", "좋은 크림을 무료로 받아서 너무 기뻤어요 유통기한도 엄청 넉넉하고 화장품도 너무 좋아요"));
+
+      shop.add(new ShopDTO(R.drawable.shop6, "루네디뷰티", "속눈썹펌/페이스왁싱 전문샵 루네디뷰티 [CJ...]", "3Km", "후기 8", "단골 43"
+              , "제발옷장정리하자", "굿 너무너무 만족합니다 단골등록 꾹 했어요 잡초자라면 또 뽑고 또뽑아야합니다 ㅎㅎㅎ"));
 
         ShopAdapter shopAdapter = new ShopAdapter(inflater, shop);
         recv_shop.setAdapter(shopAdapter);
         recv_shop.setLayoutManager(new LinearLayoutManager(getContext(), RecyclerView.HORIZONTAL, false));
+
+
+
+        // 우리동네 인기쿠폰
+       recv_cp = v.findViewById(R.id.recv_cp);
+
+
         return v;
     }
 }

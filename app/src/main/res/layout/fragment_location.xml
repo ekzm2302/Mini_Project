@@ -252,7 +252,7 @@
     </LinearLayout>
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recv_shop"
-        android:padding="10dp"
+
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
@@ -265,19 +265,35 @@
     <LinearLayout
         android:padding="10dp"
         android:orientation="vertical"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
         <TextView
+            android:layout_weight="1"
             android:textColor="#000"
             android:textSize="18dp"
             android:textStyle="bold"
-            android:text="설치없이 바로 이용하는 당근미니"
+            android:text="우리동네 인기쿠폰"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
+            <TextView
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:outlineAmbientShadowColor="#000"
+                android:textColor="#000"
+                android:text="받은 쿠폰 보기 >"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
     </LinearLayout>
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recv_item2"
+        android:id="@+id/recv_cp"
         android:padding="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
