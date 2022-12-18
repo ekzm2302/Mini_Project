@@ -1,6 +1,7 @@
 package com.example.mini_project;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
@@ -23,8 +24,10 @@ public class SplashActivity extends AppCompatActivity {
 
                 Intent intent = new Intent(SplashActivity.this, MainActivity.class);
                 startActivity(intent);
+                ActivityCompat.finishAffinity(SplashActivity.this);
 
             }
         }, 1000 * 3);
+
     }
 }
