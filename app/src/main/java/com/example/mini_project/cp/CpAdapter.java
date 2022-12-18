@@ -32,6 +32,11 @@ public class CpAdapter extends RecyclerView.Adapter<CpAdapter.ViewHolder>{
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder h, int i) {
+        h.img_cp_img.setImageResource(cplist.get(i).getImga());
+        h.tv_cp_title.setText(cplist.get(i).getTitle());
+        h.tv_cp_km.setText(cplist.get(i).getKm());
+        h.tv_cp_nic.setText(cplist.get(i).getNic());
+        h.tv_cp_msg.setText(cplist.get(i).getMsg());
 
     }
 

@@ -1,5 +1,6 @@
 package com.example.mini_project.location;
 
+import android.app.Application;
 import android.content.Intent;
 import android.os.Bundle;
 
@@ -10,12 +11,16 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.SeekBar;
 import android.widget.TextView;
 
 import com.example.mini_project.R;
+import com.example.mini_project.Setting.SettingActivity;
 import com.example.mini_project.cp.CpAdapter;
 import com.example.mini_project.cp.CpDTO;
+import com.example.mini_project.search.SearchActivity;
 
 import java.util.ArrayList;
 
@@ -29,6 +34,9 @@ public class LocationFragment extends Fragment {
     ArrayList<JobDTO3> jobs3;
     ArrayList<ShopDTO> shop;
     ArrayList<CpDTO> cplist;
+    ImageView search;
+    TextView tv_loc_dong;
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -117,15 +125,45 @@ public class LocationFragment extends Fragment {
         cplist.add(new CpDTO(R.drawable.cp1, "피굽남피자6호점", "2.5km", "첫 방문 30%할인"
                         , "레닌그라드", "가게가 깔끔하고 관리가 만족스러웠어요.."));
 
-        cplist.add(new CpDTO(R.drawable.cp1, "피굽남피자6호점", "2.5km", "첫 방문 30%할인"
+        cplist.add(new CpDTO(R.drawable.cp2, "피굽남피자6호점", "2.5km", "첫 방문 30%할인"
                 , "레닌그라드", "가게가 깔끔하고 관리가 만족스러웠어요.."));
 
-        cplist.add(new CpDTO(R.drawable.cp1, "피굽남피자6호점", "2.5km", "첫 방문 30%할인"
+        cplist.add(new CpDTO(R.drawable.cp3, "피굽남피자6호점", "2.5km", "첫 방문 30%할인"
+                , "레닌그라드", "가게가 깔끔하고 관리가 만족스러웠어요.."));
+
+        cplist.add(new CpDTO(R.drawable.cp4, "피굽남피자6호점", "2.5km", "첫 방문 30%할인"
+                , "레닌그라드", "가게가 깔끔하고 관리가 만족스러웠어요.."));
+
+        cplist.add(new CpDTO(R.drawable.cp5, "피굽남피자6호점", "2.5km", "첫 방문 30%할인"
                 , "레닌그라드", "가게가 깔끔하고 관리가 만족스러웠어요.."));
 
         CpAdapter cpAdapter = new CpAdapter(inflater, cplist);
         recv_cp.setAdapter(cpAdapter);
         recv_cp.setLayoutManager(new LinearLayoutManager(getContext(), RecyclerView.HORIZONTAL, false));
+
+        search = (ImageView) v.findViewById(R.id.search);
+        search.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+               Intent intent = new Intent(getActivity(), SearchActivity.class);
+                getActivity().startActivity(intent);
+                getActivity().overridePendingTransition(R.anim.out_right, R.anim.out_left);
+            }
+
+        });
+
+        tv_loc_dong = (TextView) v.findViewById(R.id.tv_loc_dong);
+        tv_loc_dong.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), SettingActivity.class);
+                getActivity().startActivity(intent);
+                getActivity().overridePendingTransition(R.anim.out_bottom2, R.anim.out_top2);
+            }
+        });
+
+
 
         return v;
     }

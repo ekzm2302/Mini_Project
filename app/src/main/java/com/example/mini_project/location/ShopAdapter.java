@@ -41,6 +41,7 @@ public class ShopAdapter extends RecyclerView.Adapter<ShopAdapter.ViewHolder>{
     h.tv_shop_nic.setText(shop.get(i).getNic());
     h.tv_shop_msg2.setText(shop.get(i).getMsg2());
 
+
     }
 
     @Override

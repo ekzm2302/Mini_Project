@@ -1,5 +1,7 @@
 package com.example.mini_project.home;
 
+import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -9,9 +11,14 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.TextView;
 
 import com.example.mini_project.R;
+import com.example.mini_project.Setting.SettingActivity;
 import com.example.mini_project.common.CommonMethod;
+import com.example.mini_project.search.SearchActivity;
 
 import java.util.ArrayList;
 
@@ -19,12 +26,16 @@ import java.util.ArrayList;
 public class homeFragment extends Fragment {
     RecyclerView recv_home;
     ArrayList<HomeDTO> list;
+    ImageView search;
+    TextView tv_loc_dong;
+
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.fragment_home, container, false);
 
-        ArrayList<HomeDTO> list = new ArrayList<>();
+            list = new ArrayList<>();
             list.add(new HomeDTO(R.drawable.car4, "컴퓨터 본체 팔아유", "서구 화정동 끌올: 4분 30초", "250,000원", "12" , "6" ));
             list.add(new HomeDTO(R.drawable.car1, "킥보드를 판매합니다", "서구 금호동 끌올: 30초", "100,000원", "1" , "5" ));
             list.add(new HomeDTO(R.drawable.car2, "의자 판매합니다", "서구 쌍촌동 끌올: 1분 30초", "50,000원",  "3"  , "4" ));
@@ -50,6 +61,31 @@ public class homeFragment extends Fragment {
         recv_home.setAdapter(adapter);
         LinearLayoutManager manager = CommonMethod.getManager(getContext());
         recv_home.setLayoutManager(manager);
+
+        // 검색
+        search = (ImageView) v.findViewById(R.id.search);
+        search.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(getActivity(), SearchActivity.class);
+                getActivity().startActivity(intent);
+                getActivity().overridePendingTransition(R.anim.out_right, R.anim.out_left);
+            }
+
+        });
+
+        tv_loc_dong = (TextView) v.findViewById(R.id.tv_loc_dong);
+        tv_loc_dong.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), SettingActivity.class);
+                getActivity().startActivity(intent);
+                getActivity().overridePendingTransition(R.anim.out_bottom2, R.anim.out_top2);
+            }
+        });
+
+        
 
         return v;
     }

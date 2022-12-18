@@ -1,5 +1,6 @@
 package com.example.mini_project.life;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -9,8 +10,12 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.example.mini_project.R;
+import com.example.mini_project.Setting.SettingActivity;
+import com.example.mini_project.search.SearchActivity;
 
 import java.util.ArrayList;
 
@@ -18,6 +23,8 @@ public class LifeFragment extends Fragment {
     RecyclerView recv_card, recv_dong;
     ArrayList<CardDTO> list;
     ArrayList<DongDTO> list2;
+    ImageView search;
+    TextView tv_loc_dong;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -59,9 +66,28 @@ public class LifeFragment extends Fragment {
        recv_dong.setAdapter(adapter1);
        recv_dong.setLayoutManager(new LinearLayoutManager(getContext(), RecyclerView.VERTICAL, false));
 
+        // 검색
+        search = (ImageView) v.findViewById(R.id.search);
+        search.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
 
+                Intent intent = new Intent(getActivity(), SearchActivity.class);
+                getActivity().startActivity(intent);
+                getActivity().overridePendingTransition(R.anim.out_right, R.anim.out_left);
+            }
 
+        });
 
+        tv_loc_dong = (TextView) v.findViewById(R.id.tv_loc_dong);
+        tv_loc_dong.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), SettingActivity.class);
+                getActivity().startActivity(intent);
+                getActivity().overridePendingTransition(R.anim.out_bottom2, R.anim.out_top2);
+            }
+        });
 
 
         return v;
