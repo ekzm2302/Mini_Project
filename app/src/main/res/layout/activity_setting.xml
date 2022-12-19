@@ -105,7 +105,7 @@
        android:layout_marginTop="15dp"
        android:layout_marginLeft="10dp"
        android:layout_marginRight="10dp"
-       android:layout_marginBottom="15dp"
+       android:layout_marginBottom="10dp"
        android:thumb="@drawable/seekbar_thumb"
        android:progressDrawable="@drawable/seekbar_progress"
        android:splitTrack="false"/>
@@ -129,10 +129,10 @@
         android:layout_height="wrap_content"/>
 </LinearLayout>
     <ImageView
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="20dp"
         android:scaleType="fitXY"
         android:layout_gravity="center"
-        android:src="@drawable/car1"
+        android:src="@drawable/gogo"
         android:layout_width="320dp"
         android:layout_height="250dp"/>
 </LinearLayout>
