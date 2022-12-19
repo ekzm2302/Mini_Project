@@ -60,7 +60,7 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.ViewHolder>{
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
-        ImageView car, chat, her;
+        ImageView car, chat, her, home_ic_add;
         TextView tv_sale, tv_area, tv_price, tv_num1, tv_num2;
         LinearLayout item_recv;
         public ViewHolder(@NonNull View v) {
@@ -74,6 +74,8 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.ViewHolder>{
             tv_num1 = v.findViewById(R.id.tv_num1);
             tv_num2 = v.findViewById(R.id.tv_num2);
             item_recv = v.findViewById(R.id.item_recv);
+
+
 
 
         }

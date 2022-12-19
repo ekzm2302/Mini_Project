@@ -56,7 +56,7 @@
         android:layout_height="wrap_content">
 
         <Button
-            android:text="양산동             X"
+            android:text="양산동               X"
             android:layout_marginTop="-5dp"
             android:layout_marginRight="5dp"
             android:layout_weight="1"

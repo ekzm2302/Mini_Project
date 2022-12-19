@@ -26,7 +26,7 @@ import java.util.ArrayList;
 public class homeFragment extends Fragment {
     RecyclerView recv_home;
     ArrayList<HomeDTO> list;
-    ImageView search;
+    ImageView search, home_ic_add;
     TextView tv_loc_dong;
 
 
@@ -85,7 +85,6 @@ public class homeFragment extends Fragment {
             }
         });
 
-        
 
         return v;
     }

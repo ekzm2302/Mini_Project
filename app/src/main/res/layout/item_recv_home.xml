@@ -12,12 +12,13 @@
         android:layout_height="match_parent">
 
     <ImageView
+        android:layout_marginBottom="3dp"
         android:layout_marginTop="8dp"
         android:layout_gravity="center"
         android:id="@+id/car"
         android:src="@drawable/car2"
         android:scaleType="fitXY"
-        android:layout_width="140dp"
+        android:layout_width="130dp"
         android:layout_height="140dp"/>
 
         <LinearLayout
@@ -26,18 +27,18 @@
             android:layout_height="match_parent">
         <TextView
             android:textColor="#000"
-            android:textSize="18dp"
+            android:textSize="17dp"
             android:id="@+id/tv_sale"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="10dp"
-            android:textStyle="bold"
+
             android:text="킥보드 판매합니다. "
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
             <TextView
                 android:id="@+id/tv_area"
-                android:textSize="13dp"
+                android:textSize="12dp"
                 android:layout_marginTop="3dp"
                 android:layout_marginLeft="10dp"
                 android:text="서구 치평동:   끌올 50초 전"
