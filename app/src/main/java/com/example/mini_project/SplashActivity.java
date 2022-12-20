@@ -27,7 +27,7 @@ public class SplashActivity extends AppCompatActivity {
                 ActivityCompat.finishAffinity(SplashActivity.this);
 
             }
-        }, 1000 * 3);
+        }, 1000 * 2);
 
     }
 }

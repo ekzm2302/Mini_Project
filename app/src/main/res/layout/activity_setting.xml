@@ -97,8 +97,10 @@
         android:layout_height="wrap_content"/>
 
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
    <SeekBar
-
        android:id="@+id/seekBar"
        android:layout_width="match_parent"
        android:layout_height="30dp"
@@ -109,6 +111,34 @@
        android:thumb="@drawable/seekbar_thumb"
        android:progressDrawable="@drawable/seekbar_progress"
        android:splitTrack="false"/>
+
+        <View
+
+            android:id="@+id/view1"
+            android:background="@color/white"
+            android:layout_width="1dp"
+            android:layout_height="19dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="41dp"/>
+
+        <View
+            android:layout_toRightOf="@id/view1"
+            android:id="@+id/view2"
+            android:background="@color/white"
+            android:layout_width="1dp"
+            android:layout_height="19dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="296px"
+            android:layout_marginTop="41dp"/>
+
+
+
+    </RelativeLayout>
+    
+    
+    
+    
 <LinearLayout
     android:orientation="horizontal"
     android:layout_width="match_parent"

@@ -1,0 +1,29 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:icon="@drawable/carrot_category15"
+        app:showAsAction="always"
+        android:id="@+id/action_menu1"
+        android:title="알바" />
+
+    <item
+        android:id="@+id/action_menu2"
+        android:title="과외/클래스"
+        />
+    <item
+        android:id="@+id/action_menu3"
+        android:title="농수산물"/>
+
+    <item
+        android:id="@+id/action_menu4"
+        android:title="부동산"/>
+
+    <item
+        android:id="@+id/action_menu5"
+        android:title="중고차"/>
+
+
+
+</menu>

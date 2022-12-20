@@ -6,24 +6,31 @@ import android.os.Bundle;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import android.view.LayoutInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.PopupMenu;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import com.example.mini_project.PopupDTO;
 import com.example.mini_project.R;
 import com.example.mini_project.Setting.SettingActivity;
+import com.example.mini_project.home.HomeActivity;
 import com.example.mini_project.search.SearchActivity;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class LifeFragment extends Fragment {
     RecyclerView recv_card, recv_dong;
     ArrayList<CardDTO> list;
     ArrayList<DongDTO> list2;
-    ImageView search;
+    ImageView search, home_ic_add;
     TextView tv_loc_dong;
 
     @Override
@@ -89,7 +96,62 @@ public class LifeFragment extends Fragment {
             }
         });
 
+        home_ic_add = (ImageView) v.findViewById(R.id.home_ic_add);
+        ArrayList<PopupDTO> poplist = new ArrayList<>();
+        home_ic_add.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                home_ic_add.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        final PopupMenu popupMenu = new PopupMenu(getContext(), v);
+                        getActivity().getMenuInflater().inflate(R.menu.popup, popupMenu.getMenu());
 
+                        popupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
+                            @Override
+                            public boolean onMenuItemClick(MenuItem item) {
+                                if (item.getItemId() == R.id.action_menu1){
+                                    Intent intent = new Intent(getActivity(), LifeActivity.class);
+                                    startActivity(intent);
+                                    Toast.makeText(getContext(), "알바 점검중!", Toast.LENGTH_SHORT).show();
+                                }else if (item.getItemId() == R.id.action_menu2){
+                                    Intent intent = new Intent(getActivity(), LifeActivity.class);
+                                    startActivity(intent);
+                                    Toast.makeText(getContext(), "과외/클래스 점검중!", Toast.LENGTH_SHORT).show();
+                                }else if(item.getItemId() == R.id.action_menu3){
+                                    Intent intent = new Intent(getActivity(), LifeActivity.class);
+                                    startActivity(intent);
+                                    Toast.makeText(getContext(), "농수산물 점검중!", Toast.LENGTH_SHORT).show();
+                                }else if(item.getItemId() == R.id.action_menu4){
+                                    Intent intent = new Intent(getActivity(), LifeActivity.class);
+                                    startActivity(intent);
+                                    Toast.makeText(getContext(), "부동산 점검중!", Toast.LENGTH_SHORT).show();
+                                }else if(item.getItemId() == R.id.action_menu5){
+                                    Intent intent = new Intent(getActivity(), LifeActivity.class);
+                                    startActivity(intent);
+                                    Toast.makeText(getContext(), "중고차 점검중!", Toast.LENGTH_SHORT).show();
+                                }
+
+                                return false;
+                            }
+                        });
+                        popupMenu.show();
+                    }
+
+                });
+
+            }
+        });
+// 새로고침
+        SwipeRefreshLayout swipeLayout;
+        swipeLayout = (SwipeRefreshLayout) v.findViewById(R.id.swipeLayout);
+        swipeLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+            @Override
+            public void onRefresh() {
+                swipeLayout.setRefreshing(false);
+            }
+        });
         return v;
     }
+
 }

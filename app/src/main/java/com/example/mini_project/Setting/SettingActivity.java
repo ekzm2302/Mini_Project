@@ -27,8 +27,8 @@ public class SettingActivity extends AppCompatActivity {
         getSupportActionBar().hide();
 
         seekBar = (SeekBar) findViewById(R.id.seekBar);
-        seekBar.setMax(5);
-        seekBar.setProgress(2);
+        seekBar.setMax(3);
+        seekBar.setProgress(1);
 
         seekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
@@ -47,6 +47,8 @@ public class SettingActivity extends AppCompatActivity {
             }
         });
 
+
+
         img_close = (ImageView) findViewById(R.id.img_close);
         img_close.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -55,4 +57,6 @@ public class SettingActivity extends AppCompatActivity {
             }
         });
     }
+
+
 }
