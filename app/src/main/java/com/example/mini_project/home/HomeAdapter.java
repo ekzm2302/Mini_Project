@@ -15,6 +15,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.mini_project.R;
 
 import java.util.ArrayList;
+import java.util.Random;
 
 public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.ViewHolder>{
     LayoutInflater inflater;
@@ -37,6 +38,8 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.ViewHolder>{
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder h, int i) {
+
+//        int j = new Random().nextInt(list.size());
         h.car.setImageResource(list.get(i).getImgs());
         h.tv_sale.setText(list.get(i).getTv_sale());
         h.tv_area.setText(list.get(i).getTv_area());
@@ -74,7 +77,6 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.ViewHolder>{
             tv_num1 = v.findViewById(R.id.tv_num1);
             tv_num2 = v.findViewById(R.id.tv_num2);
             item_recv = v.findViewById(R.id.item_recv);
-
 
 
 

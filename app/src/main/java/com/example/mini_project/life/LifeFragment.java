@@ -24,6 +24,7 @@ import com.example.mini_project.home.HomeActivity;
 import com.example.mini_project.search.SearchActivity;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class LifeFragment extends Fragment {
@@ -32,6 +33,7 @@ public class LifeFragment extends Fragment {
     ArrayList<DongDTO> list2;
     ImageView search, home_ic_add;
     TextView tv_loc_dong;
+    SwipeRefreshLayout swipeLayout;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -148,7 +150,25 @@ public class LifeFragment extends Fragment {
         swipeLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
             @Override
             public void onRefresh() {
+                recv_dong = v.findViewById(R.id.recv_dong);
+                list2 = new ArrayList<>();
+                list2.add(new DongDTO(R.drawable.car15, "동네생활", "길에서 주운 아이템들은 어떻게 하면 좋을까용???", "우주를떠나", "용두동", "5분 전"));
+                list2.add(new DongDTO(R.drawable.image123, "동네질문", "이 캐릭터 이름이 뭐죠?", "스폰지", "금호동", "10분 전"));
+                list2.add(new DongDTO(R.drawable.car1, "취미생활", "킥보드 어디껀가요?", "킥보드매니아", "상무지구", "13분 전"));
+                list2.add(new DongDTO(R.drawable.car13, "동네생활", "추억의 과자 맛있는데 어디서 팔아요?", "과자먹고싶어", "용두동", "20분 전"));
+                list2.add(new DongDTO(R.drawable.wndrh4, "분실/실종센터", "제 애완동물인데 찾아주세요", "찾아줘", "첨단1지구", "33분 전"));
+                list2.add(new DongDTO(R.drawable.car5, "동네생활", "길에서 주운 아이템들은 어떻게 하면 좋을까용???", "에어컨드림", "용두동", "36분 전"));
+                list2.add(new DongDTO(R.drawable.car17, "동네소식", "자전거 선착순 한명 드립니다", "공짜", "첨단2지구", "1시간 전"));
+                list2.add(new DongDTO(R.drawable.car11, "동네질문", "아이패드 샀는데 기능을 모르겠어요 알려주세요!", "아이폰몰라", "쌍촌동", "하루 전"));
+                list2.add(new DongDTO(R.drawable.car3, "취미생활", "마당 정리좀 했습니다 예쁘죠?", "아몰라", "담양", "이틀 전"));
+
+                DongAdapter adapter1 = new DongAdapter(inflater, getContext(), list2);
+                recv_dong.setAdapter(adapter1);
+                recv_dong.setLayoutManager(new LinearLayoutManager(getContext(), RecyclerView.VERTICAL, false));
+
+                Collections.shuffle(list2);
                 swipeLayout.setRefreshing(false);
+                swipeLayout.setColorSchemeColors(123456);
             }
         });
         return v;
