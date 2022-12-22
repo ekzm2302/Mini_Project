@@ -49,12 +49,13 @@
 
 
         <ImageView
+            android:scaleType="fitXY"
             android:id="@+id/img_dong"
             android:layout_marginTop="15dp"
             android:layout_gravity="center"
             android:src="@drawable/dong"
-            android:layout_width="300dp"
-            android:layout_height="300dp"/>
+            android:layout_width="380dp"
+            android:layout_height="230dp"/>
 
             <LinearLayout
                 android:layout_marginTop="10dp"

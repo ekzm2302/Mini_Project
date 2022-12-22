@@ -20,7 +20,6 @@ public class SplashActivity extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Toast.makeText(SplashActivity.this, "당근에 오신걸 환영합니다", Toast.LENGTH_SHORT).show();
 
                 Intent intent = new Intent(SplashActivity.this, MainActivity.class);
                 startActivity(intent);

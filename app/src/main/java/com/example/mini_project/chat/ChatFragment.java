@@ -1,5 +1,6 @@
 package com.example.mini_project.chat;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -9,6 +10,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
 
 import com.example.mini_project.R;
 import com.example.mini_project.life.DongAdapter;
@@ -19,6 +21,7 @@ import java.util.ArrayList;
 public class ChatFragment extends Fragment {
     RecyclerView recv_Chat;
     ArrayList<ChatDTO> list;
+    LinearLayout li_chat;
 
 
     @Override
@@ -44,6 +47,9 @@ public class ChatFragment extends Fragment {
         ChatAdapter adapter = new ChatAdapter(inflater, list, getContext());
        recv_Chat.setAdapter(adapter);
        recv_Chat.setLayoutManager(new LinearLayoutManager(getContext(), RecyclerView.VERTICAL, false));
+
+
+
 
         return v;
     }

@@ -39,7 +39,7 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.ViewHolder>{
     @Override
     public void onBindViewHolder(@NonNull ViewHolder h, int i) {
 
-//        int j = new Random().nextInt(list.size());
+
         h.car.setImageResource(list.get(i).getImgs());
         h.tv_sale.setText(list.get(i).getTv_sale());
         h.tv_area.setText(list.get(i).getTv_area());
@@ -63,7 +63,7 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.ViewHolder>{
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
-        ImageView car, chat, her, home_ic_add;
+        ImageView car, chat, her;
         TextView tv_sale, tv_area, tv_price, tv_num1, tv_num2;
         LinearLayout item_recv;
         public ViewHolder(@NonNull View v) {
